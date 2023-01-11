@@ -1,9 +1,9 @@
 import pymongo
 from flask import Flask, render_template, request
-from pymongo.server_api import ServerApi
 
-client = pymongo.MongoClient("mongodb+srv://arihant:7ELd5M1DQtCYO2Ks@cluster0.omldzri.mongodb.net/?retryWrites=true&w"
-                             "=majority", server_api=ServerApi('1'))
+client = pymongo.MongoClient("mongodb+srv://darshan_pm:pUR2puYwDYguJT1T@cluster0.4jshfu4.mongodb.net/?retryWrites"
+                             "=true&w "
+                             "=majority")
 
 db = client.get_database('project')
 col = db.get_collection('suicide')
